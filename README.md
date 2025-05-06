@@ -2,7 +2,7 @@
 
 ## Overview
 
-FancyUI is a powerful Bashrc library designed to create visually appealing and functional terminal user interfaces. It provides a comprehensive set of tools for formatting text, creating structured layouts, and adding interactive elements to command-line applications.
+FancyUI is a powerful Bash library designed to create visually appealing and functional terminal user interfaces. It provides a comprehensive set of tools for formatting text, creating structured layouts, and adding interactive elements to command-line applications.
 
 ## Key Features
 
