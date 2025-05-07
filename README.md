@@ -25,7 +25,8 @@ FancyUI is a powerful Bash library designed to create visually appealing and fun
 ### Interactive Elements
 - Animated spinners for process indication
 - Dynamic progress indicators
-- Customizable UI components for user interaction
+- Form input collection with styled prompts
+- JSON pretty-printing with syntax highlighting
 
 ## Installation
 
@@ -54,7 +55,7 @@ fancyui format "**Bold** and *italic* text with ~~strikethrough~~"
 ### Table Creation
 
 ```bash
-fancyui table 3 "Header 1" "Header 2" "Header 3" "Row 1 Col 1" "Row 1 Col 2" "Row 1 Col 3"
+fancyui table "Header 1;Header 2;Header 3" "Row 1 Col 1;Row 1 Col 2;Row 1 Col 3"
 ```
 
 ### Box Layout
@@ -63,10 +64,16 @@ fancyui table 3 "Header 1" "Header 2" "Header 3" "Row 1 Col 1" "Row 1 Col 2" "Ro
 fancyui box 30 5 "Content inside a styled box"
 ```
 
+### List Creation
+
+```bash
+fancyui list "Main Item" "Subitem 1" "Subitem 2" "Subitem 3"
+```
+
 ### Progress Indicator
 
 ```bash
-fancyui progress 100 35
+fancyui progress 100 "Processing task"
 ```
 
 ### Gradient Text
@@ -84,9 +91,19 @@ fancyui header "Section Title"
 ### Animated Spinner
 
 ```bash
-fancyui spinner "Processing data..." &
-# Do some work
-kill $!; echo
+fancyui spinner "Processing data..." 5
+```
+
+### Form Input
+
+```bash
+fancyui forms '"What is your name?","What is your quest?","What is your favorite color?"'
+```
+
+### JSON Pretty Printing
+
+```bash
+fancyui json '{"name":"John","age":30,"active":true}'
 ```
 
 ## Integration Guide
